@@ -1,0 +1,726 @@
+
+> smartq@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 841ms
+
+○ Compiling /dashboard ...
+⨯ ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m'framer-motion'[0m;
+  [90m5 |[0m [36mimport[0m { [33mTrendingUp[0m, [33mCheckCircle[0m, [33mTruck[0m, [33mClock[0m, [33mTimer[0m, [33mCpu[0m } [36mfrom[0m [32m'lucide-react'[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m [33mKPICard[0m [36mfrom[0m [32m'@/components/dashboard/KPICard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m [33mLiveOrderFeed[0m [36mfrom[0m [32m'@/components/dashboard/LiveOrderFeed'[0m;
+  [90m8 |[0m [36mimport[0m [33mSystemStatus[0m [36mfrom[0m [32m'@/components/dashboard/SystemStatus'[0m;
+  [90m9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/dashboard/page.tsx:7:1
+Module not found: Can't resolve '@/components/dashboard/LiveOrderFeed'
+  [90m 5 |[0m [36mimport[0m { [33mTrendingUp[0m, [33mCheckCircle[0m, [33mTruck[0m, [33mClock[0m, [33mTimer[0m, [33mCpu[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m 6 |[0m [36mimport[0m [33mKPICard[0m [36mfrom[0m [32m'@/components/dashboard/KPICard'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m [33mLiveOrderFeed[0m [36mfrom[0m [32m'@/components/dashboard/LiveOrderFeed'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m [33mSystemStatus[0m [36mfrom[0m [32m'@/components/dashboard/SystemStatus'[0m;
+  [90m 9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+  [90m10 |[0m [36mimport[0m { useOrderStore } [36mfrom[0m [32m'@/lib/store/useOrderStore'[0m;
+
+Import map: aliased to relative './components/dashboard/LiveOrderFeed' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/dashboard/page.tsx:8:1
+Module not found: Can't resolve '@/components/dashboard/SystemStatus'
+  [90m 6 |[0m [36mimport[0m [33mKPICard[0m [36mfrom[0m [32m'@/components/dashboard/KPICard'[0m;
+  [90m 7 |[0m [36mimport[0m [33mLiveOrderFeed[0m [36mfrom[0m [32m'@/components/dashboard/LiveOrderFeed'[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m [33mSystemStatus[0m [36mfrom[0m [32m'@/components/dashboard/SystemStatus'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+  [90m10 |[0m [36mimport[0m { useOrderStore } [36mfrom[0m [32m'@/lib/store/useOrderStore'[0m;
+  [90m11 |[0m [36mimport[0m { useStoreStore } [36mfrom[0m [32m'@/lib/store/useStoreStore'[0m;
+
+Import map: aliased to relative './components/dashboard/SystemStatus' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/dashboard/page.tsx:9:1
+Module not found: Can't resolve '@/components/map/CityMap'
+  [90m 7 |[0m [36mimport[0m [33mLiveOrderFeed[0m [36mfrom[0m [32m'@/components/dashboard/LiveOrderFeed'[0m;
+  [90m 8 |[0m [36mimport[0m [33mSystemStatus[0m [36mfrom[0m [32m'@/components/dashboard/SystemStatus'[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m [36mimport[0m { useOrderStore } [36mfrom[0m [32m'@/lib/store/useOrderStore'[0m;
+  [90m11 |[0m [36mimport[0m { useStoreStore } [36mfrom[0m [32m'@/lib/store/useStoreStore'[0m;
+  [90m12 |[0m
+
+Import map: aliased to relative './components/map/CityMap' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/dashboard/page.tsx:10:1
+Module not found: Can't resolve '@/lib/store/useOrderStore'
+  [90m 8 |[0m [36mimport[0m [33mSystemStatus[0m [36mfrom[0m [32m'@/components/dashboard/SystemStatus'[0m;
+  [90m 9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+[31m[1m>[0m [90m10 |[0m [36mimport[0m { useOrderStore } [36mfrom[0m [32m'@/lib/store/useOrderStore'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m [36mimport[0m { useStoreStore } [36mfrom[0m [32m'@/lib/store/useStoreStore'[0m;
+  [90m12 |[0m
+  [90m13 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+
+Import map: aliased to relative './lib/store/useOrderStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/dashboard/page.tsx:11:1
+Module not found: Can't resolve '@/lib/store/useStoreStore'
+  [90m 9 |[0m [36mimport[0m [33mCityMap[0m [36mfrom[0m [32m'@/components/map/CityMap'[0m;
+  [90m10 |[0m [36mimport[0m { useOrderStore } [36mfrom[0m [32m'@/lib/store/useOrderStore'[0m;
+[31m[1m>[0m [90m11 |[0m [36mimport[0m { useStoreStore } [36mfrom[0m [32m'@/lib/store/useStoreStore'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m
+  [90m13 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m14 |[0m   [36mconst[0m orders = useOrderStore(state => state.orders);
+
+Import map: aliased to relative './lib/store/useStoreStore' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /dashboard 500 in 8.9s (next.js: 8.6s, application-code: 325ms)
+[browser] Uncaught Error: ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  4 | import { motion } from 'framer-motion';
+  5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+> 6 | import KPICard from '@/components/dashboard/KPICard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+  9 | import CityMap from '@/components/map/CityMap';
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/dashboard/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/dashboard/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  4 | import { motion } from 'framer-motion';
+  5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+> 6 | import KPICard from '@/components/dashboard/KPICard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+  9 | import CityMap from '@/components/map/CityMap';
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:7:1
+Module not found: Can't resolve '@/components/dashboard/LiveOrderFeed'
+   5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+   6 | import KPICard from '@/components/dashboard/KPICard';
+>  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+
+Import map: aliased to relative './components/dashboard/LiveOrderFeed' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:8:1
+Module not found: Can't resolve '@/components/dashboard/SystemStatus'
+   6 | import KPICard from '@/components/dashboard/KPICard';
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+>  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+
+Import map: aliased to relative './components/dashboard/SystemStatus' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:9:1
+Module not found: Can't resolve '@/components/map/CityMap'
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+>  9 | import CityMap from '@/components/map/CityMap';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+
+Import map: aliased to relative './components/map/CityMap' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:10:1
+Module not found: Can't resolve '@/lib/store/useOrderStore'
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+> 10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+  13 | export default function DashboardPage() {
+
+Import map: aliased to relative './lib/store/useOrderStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:11:1
+Module not found: Can't resolve '@/lib/store/useStoreStore'
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+> 11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function DashboardPage() {
+  14 |   const orders = useOrderStore(state => state.orders);
+
+Import map: aliased to relative './lib/store/useStoreStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  4 | import { motion } from 'framer-motion';
+  5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+> 6 | import KPICard from '@/components/dashboard/KPICard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+  9 | import CityMap from '@/components/map/CityMap';
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:7:1
+Module not found: Can't resolve '@/components/dashboard/LiveOrderFeed'
+   5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+   6 | import KPICard from '@/components/dashboard/KPICard';
+>  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+
+Import map: aliased to relative './components/dashboard/LiveOrderFeed' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:8:1
+Module not found: Can't resolve '@/components/dashboard/SystemStatus'
+   6 | import KPICard from '@/components/dashboard/KPICard';
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+>  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+
+Import map: aliased to relative './components/dashboard/SystemStatus' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:9:1
+Module not found: Can't resolve '@/components/map/CityMap'
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+>  9 | import CityMap from '@/components/map/CityMap';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+
+Import map: aliased to relative './components/map/CityMap' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:10:1
+Module not found: Can't resolve '@/lib/store/useOrderStore'
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+> 10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+  13 | export default function DashboardPage() {
+
+Import map: aliased to relative './lib/store/useOrderStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:11:1
+Module not found: Can't resolve '@/lib/store/useStoreStore'
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+> 11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function DashboardPage() {
+  14 |   const orders = useOrderStore(state => state.orders);
+
+Import map: aliased to relative './lib/store/useStoreStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  4 | import { motion } from 'framer-motion';
+  5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+> 6 | import KPICard from '@/components/dashboard/KPICard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+  9 | import CityMap from '@/components/map/CityMap';
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:7:1
+Module not found: Can't resolve '@/components/dashboard/LiveOrderFeed'
+   5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+   6 | import KPICard from '@/components/dashboard/KPICard';
+>  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+
+Import map: aliased to relative './components/dashboard/LiveOrderFeed' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:8:1
+Module not found: Can't resolve '@/components/dashboard/SystemStatus'
+   6 | import KPICard from '@/components/dashboard/KPICard';
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+>  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+
+Import map: aliased to relative './components/dashboard/SystemStatus' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:9:1
+Module not found: Can't resolve '@/components/map/CityMap'
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+>  9 | import CityMap from '@/components/map/CityMap';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+
+Import map: aliased to relative './components/map/CityMap' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:10:1
+Module not found: Can't resolve '@/lib/store/useOrderStore'
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+> 10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+  13 | export default function DashboardPage() {
+
+Import map: aliased to relative './lib/store/useOrderStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:11:1
+Module not found: Can't resolve '@/lib/store/useStoreStore'
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+> 11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function DashboardPage() {
+  14 |   const orders = useOrderStore(state => state.orders);
+
+Import map: aliased to relative './lib/store/useStoreStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/dashboard/KPICard'
+  4 | import { motion } from 'framer-motion';
+  5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+> 6 | import KPICard from '@/components/dashboard/KPICard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+  9 | import CityMap from '@/components/map/CityMap';
+
+Import map: aliased to relative './components/dashboard/KPICard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:7:1
+Module not found: Can't resolve '@/components/dashboard/LiveOrderFeed'
+   5 | import { TrendingUp, CheckCircle, Truck, Clock, Timer, Cpu } from 'lucide-react';
+   6 | import KPICard from '@/components/dashboard/KPICard';
+>  7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+
+Import map: aliased to relative './components/dashboard/LiveOrderFeed' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:8:1
+Module not found: Can't resolve '@/components/dashboard/SystemStatus'
+   6 | import KPICard from '@/components/dashboard/KPICard';
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+>  8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+
+Import map: aliased to relative './components/dashboard/SystemStatus' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:9:1
+Module not found: Can't resolve '@/components/map/CityMap'
+   7 | import LiveOrderFeed from '@/components/dashboard/LiveOrderFeed';
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+>  9 | import CityMap from '@/components/map/CityMap';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+
+Import map: aliased to relative './components/map/CityMap' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:10:1
+Module not found: Can't resolve '@/lib/store/useOrderStore'
+   8 | import SystemStatus from '@/components/dashboard/SystemStatus';
+   9 | import CityMap from '@/components/map/CityMap';
+> 10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+  12 |
+  13 | export default function DashboardPage() {
+
+Import map: aliased to relative './lib/store/useOrderStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[browser] ./app/dashboard/page.tsx:11:1
+Module not found: Can't resolve '@/lib/store/useStoreStore'
+   9 | import CityMap from '@/components/map/CityMap';
+  10 | import { useOrderStore } from '@/lib/store/useOrderStore';
+> 11 | import { useStoreStore } from '@/lib/store/useStoreStore';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | export default function DashboardPage() {
+  14 |   const orders = useOrderStore(state => state.orders);
+
+Import map: aliased to relative './lib/store/useStoreStore' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+✓ Compiled in 292ms
+✓ Compiled in 513ms
+ GET /dashboard 200 in 610ms (next.js: 279ms, application-code: 331ms)
