@@ -23,9 +23,32 @@ export const CITY_NODES: CityNode[] = [
 ];
 
 export const CITY_EDGES: CityEdge[] = [
-  // Simplified for now, just to have a working build
   { id: 'store-a-hub-north', from: 'store-a', to: 'hub-north', distance: 1.5, baseTravelTime: 3, currentTravelTime: 3, trafficMultiplier: 1.0, isBlocked: false },
-  { id: 'store-a-jn-1', from: 'store-a', to: 'jn-1', distance: 1.2, baseTravelTime: 2.4, currentTravelTime: 2.4, trafficMultiplier: 1.0, isBlocked: false }
+  { id: 'store-a-jn-1', from: 'store-a', to: 'jn-1', distance: 1.2, baseTravelTime: 2.4, currentTravelTime: 2.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-a-cz-1', from: 'store-a', to: 'cz-1', distance: 1.8, baseTravelTime: 3.6, currentTravelTime: 3.6, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'hub-north-store-b', from: 'hub-north', to: 'store-b', distance: 2.0, baseTravelTime: 4.0, currentTravelTime: 4.0, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'hub-north-cz-3', from: 'hub-north', to: 'cz-3', distance: 1.5, baseTravelTime: 3.0, currentTravelTime: 3.0, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-b-jn-2', from: 'store-b', to: 'jn-2', distance: 1.0, baseTravelTime: 2.0, currentTravelTime: 2.0, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-b-cz-3', from: 'store-b', to: 'cz-3', distance: 1.3, baseTravelTime: 2.6, currentTravelTime: 2.6, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-b-cz-4', from: 'store-b', to: 'cz-4', distance: 1.4, baseTravelTime: 2.8, currentTravelTime: 2.8, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-c-cz-5', from: 'store-c', to: 'cz-5', distance: 1.6, baseTravelTime: 3.2, currentTravelTime: 3.2, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'store-c-jn-3', from: 'store-c', to: 'jn-3', distance: 1.7, baseTravelTime: 3.4, currentTravelTime: 3.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-1-wh-central', from: 'jn-1', to: 'wh-central', distance: 2.2, baseTravelTime: 4.4, currentTravelTime: 4.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-1-cz-2', from: 'jn-1', to: 'cz-2', distance: 1.1, baseTravelTime: 2.2, currentTravelTime: 2.2, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-1-jn-5', from: 'jn-1', to: 'jn-5', distance: 1.5, baseTravelTime: 3.0, currentTravelTime: 3.0, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-2-wh-central', from: 'jn-2', to: 'wh-central', distance: 1.9, baseTravelTime: 3.8, currentTravelTime: 3.8, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-2-cz-4', from: 'jn-2', to: 'cz-4', distance: 1.2, baseTravelTime: 2.4, currentTravelTime: 2.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-3-cz-6', from: 'jn-3', to: 'cz-6', distance: 1.3, baseTravelTime: 2.6, currentTravelTime: 2.6, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-3-hub-south', from: 'jn-3', to: 'hub-south', distance: 1.8, baseTravelTime: 3.6, currentTravelTime: 3.6, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-4-wh-central', from: 'jn-4', to: 'wh-central', distance: 1.7, baseTravelTime: 3.4, currentTravelTime: 3.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-4-cz-7', from: 'jn-4', to: 'cz-7', distance: 1.4, baseTravelTime: 2.8, currentTravelTime: 2.8, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-4-cz-8', from: 'jn-4', to: 'cz-8', distance: 1.6, baseTravelTime: 3.2, currentTravelTime: 3.2, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-4-hub-south', from: 'jn-4', to: 'hub-south', distance: 2.1, baseTravelTime: 4.2, currentTravelTime: 4.2, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-5-cz-2', from: 'jn-5', to: 'cz-2', distance: 0.9, baseTravelTime: 1.8, currentTravelTime: 1.8, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'jn-5-cz-8', from: 'jn-5', to: 'cz-8', distance: 1.2, baseTravelTime: 2.4, currentTravelTime: 2.4, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'hub-south-cz-7', from: 'hub-south', to: 'cz-7', distance: 1.5, baseTravelTime: 3.0, currentTravelTime: 3.0, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'cz-4-cz-5', from: 'cz-4', to: 'cz-5', distance: 1.8, baseTravelTime: 3.6, currentTravelTime: 3.6, trafficMultiplier: 1.0, isBlocked: false },
+  { id: 'cz-1-jn-5', from: 'cz-1', to: 'jn-5', distance: 1.4, baseTravelTime: 2.8, currentTravelTime: 2.8, trafficMultiplier: 1.0, isBlocked: false }
 ];
 
 export function buildAdjacencyList(edges: CityEdge[]): Map<string, CityEdge[]> {

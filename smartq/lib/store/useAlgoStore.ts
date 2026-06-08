@@ -7,12 +7,12 @@ interface AlgoStore {
   currentStep: number;
   totalSteps: number;
   steps: AlgoStep[];
-  result: any;
+  result: unknown;
   startNodeId: string | null;
   endNodeId: string | null;
   setAlgorithm: (algo: string) => void;
   setNodes: (startNodeId: string | null, endNodeId?: string | null) => void;
-  runAlgorithm: (algoFn: () => { steps: AlgoStep[], [key: string]: any }) => void;
+  runAlgorithm: (algoFn: () => { steps: AlgoStep[], [key: string]: unknown }) => void;
   stepForward: () => void;
   stepBackward: () => void;
   resetVisualization: () => void;

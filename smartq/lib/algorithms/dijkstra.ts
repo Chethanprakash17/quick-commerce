@@ -26,8 +26,8 @@ class MinHeap {
   private bubbleDown(index: number) {
     const len = this.heap.length;
     while (true) {
-      let left = 2 * index + 1;
-      let right = 2 * index + 2;
+      const left = 2 * index + 1;
+      const right = 2 * index + 2;
       let smallest = index;
       if (left < len && this.heap[left][0] < this.heap[smallest][0]) smallest = left;
       if (right < len && this.heap[right][0] < this.heap[smallest][0]) smallest = right;
@@ -92,8 +92,73 @@ export function dijkstra(graph: Map<string, CityEdge[]>, startNodeId: string, en
   return { path, distance: totalDistance, travelTime, steps: [] };
 }
 
-export function dijkstraWithSteps(graph: Map<string, CityEdge[]>, startNodeId: string, endNodeId: string): DijkstraResult {
-  const result = dijkstra(graph, startNodeId, endNodeId);
-  result.steps = [{ stepNumber: 1, description: "Calculated full path", highlightNodes: result.path, highlightEdges: [] }];
-  return result;
+export function dijkstraWithSteps(graph: Map<string, CityEdge[]>, startNodeId: string, endNodeId: string, useCurrentTrafficTime: boolean = true): DijkstraResult {
+  const distances = new Map<string, number>();
+  const previous = new Map<string, string>();
+  const pq = new MinHeap();
+  const steps: AlgoStep[] = [];
+  let stepNumber = 1;
+
+  for (const node of graph.keys()) {
+    distances.set(node, Infinity);
+  }
+  distances.set(startNodeId, 0);
+  pq.push(0, startNodeId);
+
+  while (pq.size > 0) {
+    const popped = pq.pop();
+    if (!popped) break;
+    const [dist, node] = popped;
+
+    if (dist > distances.get(node)!) continue;
+
+    const edges = graph.get(node) || [];
+    const relaxedEdges: string[] = [];
+    for (const edge of edges) {
+      const weight = useCurrentTrafficTime ? edge.currentTravelTime : edge.baseTravelTime;
+      const newDist = dist + weight;
+      if (newDist < distances.get(edge.to)!) {
+        distances.set(edge.to, newDist);
+        previous.set(edge.to, node);
+        pq.push(newDist, edge.to);
+        relaxedEdges.push(edge.id);
+      }
+    }
+
+    const distObj: Record<string, number> = {};
+    for (const [k, v] of Array.from(distances.entries())) {
+      if (v !== Infinity) distObj[k] = v;
+    }
+
+    steps.push({
+      stepNumber: stepNumber++,
+      highlightNodes: [node],
+      highlightEdges: relaxedEdges,
+      data: { distances: distObj }
+    });
+
+    if (node === endNodeId) break;
+  }
+
+  const path: string[] = [];
+  let curr = endNodeId;
+  let totalDistance = 0;
+  let travelTime = 0;
+
+  if (previous.has(curr) || curr === startNodeId) {
+    while (curr) {
+      path.unshift(curr);
+      const prev = previous.get(curr);
+      if (prev) {
+        const edge = (graph.get(prev) || []).find(e => e.to === curr);
+        if (edge) {
+          totalDistance += edge.distance;
+          travelTime += useCurrentTrafficTime ? edge.currentTravelTime : edge.baseTravelTime;
+        }
+      }
+      curr = prev!;
+    }
+  }
+
+  return { path, distance: totalDistance, travelTime, steps };
 }

@@ -10,7 +10,7 @@ export function computePriorityScore(order: Order): number {
   const urgencyBonus = Math.min(30, Math.max(0, 30 - minutesUntilDeadline));
   const weightPenalty = Math.min(10, order.totalWeight / 2);
 
-  let score = base + urgencyBonus - weightPenalty;
+  const score = base + urgencyBonus - weightPenalty;
   return Math.max(0, Math.min(130, score));
 }
 
